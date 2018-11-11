@@ -25,23 +25,23 @@
 */
 
 $antivirus_virustotal_client_scan_method_options = array(
-  'malicious' => get_string(
-	  'antivirus_virustotal_client_scan_method_option_malicious', 
-	  'antivirus_virustotal'
+	'malicious' => get_string(
+		'antivirus_virustotal_client_scan_method_option_malicious', 
+		'antivirus_virustotal'
 	),
-  'valuable' => get_string(
-			'antivirus_virustotal_client_scan_method_option_valuable', 
-			'antivirus_virustotal'
-  ),
+	'valuable' => get_string(
+		'antivirus_virustotal_client_scan_method_option_valuable', 
+		'antivirus_virustotal'
+	),
 );
 	
 $antivirus_virustotal_client_verbose_options = array(
-  'true' => get_string(
-	  'antivirus_virustotal_client_verbose_option_true', 
+	'true' => get_string(
+		'antivirus_virustotal_client_verbose_option_true', 
 		'antivirus_virustotal'
 	),
-  'false' => get_string(
-    'antivirus_virustotal_client_verbose_option_false', 
-    'antivirus_virustotal'
-  ),
+	'false' => get_string(
+		'antivirus_virustotal_client_verbose_option_false', 
+		'antivirus_virustotal'
+	),
 );

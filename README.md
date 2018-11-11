@@ -1,5 +1,5 @@
 # VirusTotal-For-Moodle
-Scan uploads utilizing the VirusTotal service that is provided and utilized by google in to ensure that the data is valuable (therefore not malicious). This project is currently disfunctional and within 50~75% complete.
+Scan uploads utilizing the VirusTotal service that is provided and utilized by google in to ensure that the data is either valuable or malicious. This project is currently disfunctional and within 50~75% complete.
 
 ## Contributors Are Invited ##
 ### We can use: ###
@@ -57,12 +57,21 @@ As of release, that feature (inclussions and exclussions based on methodology) i
 -*This will be in the administrative panel in the settings in moodle.*
 -*This will be comming to wordpress*
 ## GUI for configuring the provider-assigned API Key.
+
 -*This will be in the administrative panel in the settings of moodle.*
+
 -*This will be comming to wordpress.*
+
 ## User Agent Configuration
+
 -*This will be the administrative panel in the settings of moodle.*
+
 -*This will be comming to wordpress.*
+
 ## Server Resource Configurations
+
 -*This will be in the administrative panel in the settings of moodle.*
+
 -*This will be comming to wordpress.*
+
 ## Error Handling

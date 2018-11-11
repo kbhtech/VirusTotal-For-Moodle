@@ -2,7 +2,7 @@
 Scan uploads utilizing the VirusTotal service that is provided and utilized by google in to ensure that the data is valuable (therefore not malicious). This project is currently disfunctional and within 50~75% complete.
 
 ## Contributors Are Invited ##
-### We can use:
+### We can use: ###
 - Support with the development of this package as a patron.
 - Support with the development of this package as a developer. 
 - Support with the development of this package by demand (join community). 

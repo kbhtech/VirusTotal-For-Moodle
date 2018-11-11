@@ -3,9 +3,9 @@ Scan files utilizing the VirusTotal service that is provided and utilized by goo
 
 ## Contributors Are Invited ##
 ### We can use:
-> Support with the development of this project as a patron.
-> Support with the development of this projact as a developer. 
-> Support with the development of this projact by demand (join community). 
+- Support with the development of this project as a patron.
+- Support with the development of this projact as a developer. 
+- Support with the development of this projact by demand (join community). 
 
 ## Scan Method Options 
 ### See:

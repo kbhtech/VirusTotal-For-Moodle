@@ -9,11 +9,11 @@
 
 ## GUI for configuring the reasoning of the package. ##
 
-Scan method - intuitive logic. The package allows for the administration/security team to set what they are trying to prove out of a virus scan. This is beneficial in the event of faults, exclussion of signatures, and the inclussion  of signatures. Whenever the end user selects "Trying to prove malicous." or "Trying to prove valuable." they set the clients prejudices for data where "Trying to prove" implies the opposite. (Fe: Trying to prove mallice; meaning that by default the data is valuable.).
+Scan method - The package allows for the administration/security team to set what they are trying to prove out of the virus scan. This is beneficial in the event of faults, exclussion of signatures, and the inclussion  of signatures. The end user selects "Trying to prove malicous." or "Trying to prove valuable." which in-turn sets prejudices for or against data. "Trying to prove" implies the opposite. (for example, if we are trying to prove malicius then by default we must see the data to be valuable.).
 	
-Setting the default(s) for unclassified data (neither deemed virus or malicious) in this intuitive mannor calls for the expansion if "include these signatures, for the conclussion of the scan is inductive in nature." vs. "exclude these signatures, for the conclussion of the scan is deductive in nature."
+This intuitive mannor calls for the expansion in future releases. One of which: methodology based inclussions and exclussions. for example: if the antivirus is reaching its conclussion through inductive means then a signature list can be assumed to be a inclussions list. In turn if the antivirus is reaching its end conclussion through deductive means then a signature list can be assumed to be an exclussions list. 
 	
-As of release that feature (inclussions and exclussions based on methodology) is not supported. In the meantime, methodology adds support to failover.
+As of release, that feature (inclussions and exclussions based on methodology) is not supported. In the meantime, methodology adds support to failover.
 
 ### Developer(s): ###
 	~/options.php, 

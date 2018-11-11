@@ -7,7 +7,7 @@ Scan uploads utilizing the VirusTotal service that is provided and utilized by g
 - Support with the development of this package as a developer. 
 - Support with the development of this package by demand (join community). 
 
-## GUI for configuring the method of which the antivirus judges data. ##
+## Web interface provided means for administrators to configure the method of which the antivirus judges data. ##
 
 *this will be in the administrative panel of moodle.*
 
@@ -55,7 +55,7 @@ As of release, that feature (inclussions and exclussions based on methodology) i
 		
 	~/adminlib.php: class antivirus_virustotal_client_scan_method extends admin_setting_configselect { // validation & I/O code...
 	
-## GUI for configuring the depth of the feedback that the provider returns to the client. 
+## Web interface provided means for administrators to activate verbose reporting.
 
 -*This will be in the administrative panel in the settings in moodle.*
 
@@ -99,7 +99,7 @@ As of release, that feature (inclussions and exclussions based on methodology) i
 	
 	~/adminlib.php: class antivirus_virustotal_client_verbose_setting extends admin_setting_configselect { // validation & I/O code...
 
-## GUI for configuring the provider-assigned API Key.
+## Web interface provided means for administrators to assign an API key, provided by VirusTotal.
 
 -*This will be in the administrative panel in the settings of moodle.*
 
@@ -143,7 +143,7 @@ As of release, that feature (inclussions and exclussions based on methodology) i
 	
 	~/adminlib.php: class antivirus_virustotal_client_verbose_setting extends admin_setting_configselect { // validation & I/O code..
 
-## User Agent Configuration
+## Web interface provided means to configure the "useragent" that is used in the connection.
 
 -*This will be the administrative panel in the settings of moodle.*
 
@@ -187,7 +187,8 @@ As of release, that feature (inclussions and exclussions based on methodology) i
 	
 	~/adminlib.php: class antivirus_virustotal_client_verbose_setting extends admin_setting_configselect { // validation & I/O code..
 
-## Server Resource Configurations
+## Web interface provided means to configure client end-points (provider resources).
+
 
 -*This will be in the administrative panel in the settings of moodle.*
 

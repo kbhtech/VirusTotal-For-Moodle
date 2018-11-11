@@ -1,5 +1,5 @@
-# VirusTotal-For-Moodle-AND-Wordpress
-\	Scan uploads utilizing the VirusTotal service that is provided and utilized by google in to ensure that the data is valuable (therefore not malicious). This project is currently disfunctional and within 50~75% complete.
+# VirusTotal-For-Moodle
+Scan uploads utilizing the VirusTotal service that is provided and utilized by google in to ensure that the data is valuable (therefore not malicious). This project is currently disfunctional and within 50~75% complete.
 
 ## Contributors Are Invited ##
 ### We can use: ###

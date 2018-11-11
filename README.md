@@ -16,7 +16,7 @@ You can support the expideted development of this projact as a developer: { Disc
 				'antivirus_virustotal_client_scan_method_option_valuable', 
 				'antivirus_virustotal'
 			),
-    		);
+		);
 		$settings->add(... $antivirus_virustotal_client_scan_method_options));
 	~/classes/scanner.php: 
 		"client_scan_method", 

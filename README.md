@@ -61,6 +61,44 @@ As of release, that feature (inclussions and exclussions based on methodology) i
 
 -*This will be comming to wordpress*
 
+### Assembly: ###
+	/options.php, 
+		$antivirus_virustotal_client_verbose_options = array(
+    			'true' => get_string(
+				'antivirus_virustotal_client_verbose_option_true', 
+				'antivirus_virustotal'
+			),
+    			'false' => get_string(
+				'antivirus_virustotal_client_verbose_option_false', 
+				'antivirus_virustotal'
+			),
+		);
+	
+	~/settings.php
+		$settings->add(... $antivirus_virustotal_client_verbose_options));
+	
+	~/classes/scanner.php: 
+		public function init(){
+			// gathers the absolute minimum and most commonly used configurations to perform operations. 
+		
+			if( // clients verbose mode config is not valid...
+				($this->get_config('client_verbose_method') != 'antivirus_virustotal_client_verbose_option_true' )) and 
+				($this->get_config('client_verbose_method') != 'antivirus_virustotal_client_verbose_option_false'){
+
+				// then default it.
+				$this->set_config('client_verbose_method', 'antivirus_virustotal_client_verbose_option_false');
+			}
+			...
+		}
+	
+	~/lang/en/antivirus_virustotal.php:
+		$string["antivirus_virustotal_client_verbose_setting_name"] = "Verbose Feedback?"
+		$string["antivirus_virustotal_client_verbose_setting_desc"] = "Get verbose results from VirusTotal."
+		$string["antivirus_virustotal_client_verbose_option_true"] = "True"
+		$string["antivirus_virustotal_client_verbose_option_false"] = "False"
+	
+	~/adminlib.php: class antivirus_virustotal_client_verbose_setting extends admin_setting_configselect { // validation & I/O code...
+
 ## GUI for configuring the provider-assigned API Key.
 
 -*This will be in the administrative panel in the settings of moodle.*

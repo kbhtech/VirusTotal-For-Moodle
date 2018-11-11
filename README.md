@@ -1,9 +1,10 @@
 # VirusTotal-For-Moodle
 Scan files utilizing the VirusTotal service that is provided and utilized by google in to ensure that the data is valuable (therefore not malicious). This project is currently disfunctional and within 50~75% complete.
 
-[Contributors Are Invited]
-You can support the expidited development of this project as a patron: { Patron }.
-You can support the expideted development of this projact as a developer: { Discord }. 
+## Contributors Are Invited ##
+### We can use: ###
+Support with the development of this project as a patron: { Patron }.
+Support with the expideted development of this projact as a developer: { Discord }. 
 
 ## Scan Method Options 
 ### See:

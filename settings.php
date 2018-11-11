@@ -25,7 +25,7 @@ defined('MOODLE_INTERNAL') || die();
 if ($ADMIN->fulltree) {
 	require_once(__DIR__ . '/adminlib.php');
 	require_once(__DIR__ . '/classes/scanner.php');
-	require_once(__DIR__ . '/options.php);
+	require_once(__DIR__ . '/options.php');
 
 	// The setting for the clients scanning method.
 	$settings->add(

@@ -76,80 +76,80 @@ if ($ADMIN->fulltree) {
 	);
 	
 	// The setting for the api hook that the client should connect to in order to scan files.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_server_resource_setting(
-		'antivirus_virustotal/server_resources_scan_file_setting',
-            new lang_string('server_resources_scan_file_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/server_resources_scan_file_setting',
+			new lang_string('server_resources_scan_file_setting_name', 'antivirus_virustotal'), 
 			new lang_string('server_resources_scan_file_setting_desc', 'antivirus_virustotal'), 
 			'https://www.virustotal.com/vtapi/v2/file/scan' // default none
 		)
 	);
 
 	// The setting for the api hook that the client should connect to in order to scan web address.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_server_resource_setting(
-		'antivirus_virustotal/server_resources_scan_address_setting',
-            new lang_string('server_resources_scan_address_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/server_resources_scan_address_setting',
+			new lang_string('server_resources_scan_address_setting_name', 'antivirus_virustotal'), 
 			new lang_string('server_resources_scan_address_setting_desc', 'antivirus_virustotal'), 
 			'https://www.virustotal.com/vtapi/v2/url/scan' // default none
 		)
 	);
 	
 	// The setting for the api hook that the client should rescan an already uploaded file.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_server_resource_setting(
-		'antivirus_virustotal/server_resources_rescan_file_setting',
-            new lang_string('server_resources_rescan_file_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/server_resources_rescan_file_setting',
+			new lang_string('server_resources_rescan_file_setting_name', 'antivirus_virustotal'), 
 			new lang_string('server_resources_rescan_file_setting_desc', 'antivirus_virustotal'), 
 			'https://www.virustotal.com/vtapi/v2/file/rescan' // default none
 		)
 	);
 	
 	// The setting for the api hook that the client should retrieve results of a file scan.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_server_resource_setting(
-		'antivirus_virustotal/server_resources_reports_file_setting',
-            new lang_string('server_resources_reports_file_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/server_resources_reports_file_setting',
+			new lang_string('server_resources_reports_file_setting_name', 'antivirus_virustotal'), 
 			new lang_string('server_resources_reports_file_setting_desc', 'antivirus_virustotal'), 
 			'https://www.virustotal.com/vtapi/v2/file/report' // default none
 		)
 	);
 
 	// The setting for the api hook that the client should retrieve results of an address scan.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_server_resource_setting(
-		'antivirus_virustotal/server_resources_reports_url_setting',
-            new lang_string('server_resources_reports_url_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/server_resources_reports_url_setting',
+			new lang_string('server_resources_reports_url_setting_name', 'antivirus_virustotal'), 
 			new lang_string('server_resources_reports_url_setting_desc', 'antivirus_virustotal'), 
 			'https://www.virustotal.com/vtapi/v2/url/scan' // default none
 		)
 	);
 	
 	// The setting for the api hook that the client should retrieve results of an address scan.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_server_resource_setting(
-		'antivirus_virustotal/server_resources_reports_ip_setting',
-            new lang_string('server_resources_reports_ip_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/server_resources_reports_ip_setting',
+			new lang_string('server_resources_reports_ip_setting_name', 'antivirus_virustotal'), 
 			new lang_string('server_resources_reports_ip_setting_desc', 'antivirus_virustotal'), 
 			'http://www.virustotal.com/vtapi/v2/ip-address/report' // default none
 		)
 	);
 	
 	// The setting for the api hook that the client should retrieve results of an address scan.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_server_resource_setting(
-		'antivirus_virustotal/server_resources_reports_domain_setting',
-            new lang_string('server_resources_reports_domain_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/server_resources_reports_domain_setting',
+			new lang_string('server_resources_reports_domain_setting_name', 'antivirus_virustotal'), 
 			new lang_string('server_resources_reports_domain_setting_desc', 'antivirus_virustotal'), 
 			'http://www.virustotal.com/vtapi/v2/domain/report' // default none
 		)
 	);
 	
 	// The setting for the api hook that the client should send comments about a scan with.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_server_resource_setting(
-		'antivirus_virustotal/server_resources_comments_setting',
-            new lang_string('server_resources_comments_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/server_resources_comments_setting',
+			new lang_string('server_resources_comments_setting_name', 'antivirus_virustotal'), 
 			new lang_string('server_resources_comments_setting_desc', 'antivirus_virustotal'), 
 			'https://www.virustotal.com/vtapi/v2/comments/put' // default none
 		)

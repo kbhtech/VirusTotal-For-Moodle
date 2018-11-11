@@ -1,5 +1,5 @@
 # VirusTotal-For-Moodle-AND-Wordpress
-Scan files utilizing the VirusTotal service that is provided and utilized by google in to ensure that the data is valuable (therefore not malicious). This project is currently disfunctional and within 50~75% complete.
+Scan uploads utilizing the VirusTotal service that is provided and utilized by google in to ensure that the data is valuable (therefore not malicious). This project is currently disfunctional and within 50~75% complete.
 
 ## Contributors Are Invited ##
 ### We can use:
@@ -38,7 +38,11 @@ Scan files utilizing the VirusTotal service that is provided and utilized by goo
 			...
 		}
 		
-	~/libs/client/scan_method_setting.php
+	~/lang/en/antivirus_virustotal.php:
+		$string["antivirus_virustotal_client_scan_method_option_malicious"] = "Data is Malicious."
+		$string["antivirus_virustotal_client_scan_method_option_valuable"] = "Data is Valuable."
+		
+	~/libs/client/scan_method_setting.php: input/setting validation class.
 ###
 
 Ref:(

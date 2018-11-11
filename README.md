@@ -8,6 +8,8 @@ Scan uploads utilizing the VirusTotal service that is provided and utilized by g
 - Support with the development of this package by demand (join community). 
 
 ## GUI for configuring the method of which the antivirus judges data. ##
+*this will be in the administrative panel of moodle.*
+*this will be comming to wordpress*
 
 Scan method - The package allows for the administration/security team to set what they are trying to prove out of the virus scan. This is beneficial in the event of faults, exclussion of signatures, and the inclussion  of signatures. The end user selects "Trying to prove malicous." or "Trying to prove valuable." which in-turn sets prejudices for or against data. "Trying to prove" implies the opposite. (for example, if we are trying to prove malicius then by default we must see the data to be valuable.).
 	
@@ -15,7 +17,7 @@ This intuitive mannor calls for the expansion in future releases. One of which: 
 	
 As of release, that feature (inclussions and exclussions based on methodology) is not supported. In the meantime, methodology adds support to failover.
 
-### Developer(s): ###
+### Assembly: ###
 	~/options.php, 
 		$antivirus_virustotal_client_scan_method_options = array(
         		'malicious' => get_string(
@@ -51,8 +53,16 @@ As of release, that feature (inclussions and exclussions based on methodology) i
 		
 	~/libs/client/scan_method_setting.php: input/setting validation class.
 	
-## Verbose Reporting Options
-## API Key Configuration
+## GUI for configuring the depth of the feedback that the provider returns to the client. 
+-*This will be in the administrative panel in the settings in moodle.*
+-*This will be comming to wordpress*
+## GUI for configuring the provider-assigned API Key.
+-*This will be in the administrative panel in the settings of moodle.*
+-*This will be comming to wordpress.*
 ## User Agent Configuration
+-*This will be the administrative panel in the settings of moodle.*
+-*This will be comming to wordpress.*
 ## Server Resource Configurations
+-*This will be in the administrative panel in the settings of moodle.*
+-*This will be comming to wordpress.*
 ## Error Handling

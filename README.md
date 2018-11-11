@@ -9,7 +9,7 @@ Scan files utilizing the VirusTotal service that is provided and utilized by goo
 
 ## Scan Method Options 
 ### See:
-	~/settings.php, 
+	~/options.php, 
 		$antivirus_virustotal_client_scan_method_options = array(
         		'malicious' => get_string(
 				'antivirus_virustotal_client_scan_method_option_malicious', 
@@ -20,6 +20,8 @@ Scan files utilizing the VirusTotal service that is provided and utilized by goo
 				'antivirus_virustotal'
 			),
 		);
+		
+	~/settings.php
 		$settings->add(... $antivirus_virustotal_client_scan_method_options));
 		
 	~/classes/scanner.php: 
@@ -35,6 +37,7 @@ Scan files utilizing the VirusTotal service that is provided and utilized by goo
 			}
 			...
 		}
+		
 	~/libs/client/scan_method_setting.php
 ###
 

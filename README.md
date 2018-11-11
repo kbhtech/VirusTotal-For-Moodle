@@ -5,13 +5,13 @@ You can support the expidited development of this project as a patron: { Patron 
 You can support the expideted development of this projact as a developer: { Discord }. 
 
 ## Scan Method Options 
-See:( 
+See:(
 	~/settings.php, 
 	~/classes/scanner.php: 
 		"client_scan_method", 
 		"antivirus_virustotal_client_scan_method_option_valauable",
 		"antivirus_virustotal_client_scan_method_option_valauable"
-	~/lang/en/antivirus_virustotal.php
+		~/lang/en/antivirus_virustotal.php
 	~/libs/client/scan_method_setting.php
 );
 

@@ -3,17 +3,17 @@
 
 ## Contributors Are Invited ##
 ### We can use: ###
-\	- Support with the development of this package as a patron.
-\	- Support with the development of this package as a developer. 
-\	- Support with the development of this package by demand (join community). 
+	- Support with the development of this package as a patron.
+	- Support with the development of this package as a developer. 
+	- Support with the development of this package by demand (join community). 
 
 ## GUI for configuring the reasoning of the package. ##
 
-\	Scan method - intuitive logic. The package allows for the administration/security team to set what they are trying to prove out of a virus scan. This is beneficial in the event of faults, exclussion of signatures, and the inclussion  of signatures. Whenever the end user selects "Trying to prove malicous." or "Trying to prove valuable." they set the clients prejudices for data where "Trying to prove" implies the opposite. (Fe: Trying to prove mallice; meaning that by default the data is valuable.).
+	Scan method - intuitive logic. The package allows for the administration/security team to set what they are trying to prove out of a virus scan. This is beneficial in the event of faults, exclussion of signatures, and the inclussion  of signatures. Whenever the end user selects "Trying to prove malicous." or "Trying to prove valuable." they set the clients prejudices for data where "Trying to prove" implies the opposite. (Fe: Trying to prove mallice; meaning that by default the data is valuable.).
 	
-\	Setting the default(s) for unclassified data (neither deemed virus or malicious) in this intuitive mannor calls for the expansion if "include these signatures, for the conclussion of the scan is inductive in nature." vs. "exclude these signatures, for the conclussion of the scan is deductive in nature."
+	Setting the default(s) for unclassified data (neither deemed virus or malicious) in this intuitive mannor calls for the expansion if "include these signatures, for the conclussion of the scan is inductive in nature." vs. "exclude these signatures, for the conclussion of the scan is deductive in nature."
 	
-\	As of release that feature (inclussions and exclussions based on methodology) is not supported. In the meantime, methodology adds support to failover.
+	As of release that feature (inclussions and exclussions based on methodology) is not supported. In the meantime, methodology adds support to failover.
 
 ### Developer(s): ###
 	~/options.php, 

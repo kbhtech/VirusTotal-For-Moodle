@@ -21,6 +21,7 @@ Scan files utilizing the VirusTotal service that is provided and utilized by goo
 			),
 		);
 		$settings->add(... $antivirus_virustotal_client_scan_method_options));
+		
 	~/classes/scanner.php: 
 		public function scan($resource){
 			$this->init(); // the initiator contains the absolute minimum to head all functions.

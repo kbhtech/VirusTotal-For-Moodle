@@ -22,10 +22,18 @@ Scan files utilizing the VirusTotal service that is provided and utilized by goo
 		);
 		$settings->add(... $antivirus_virustotal_client_scan_method_options));
 	~/classes/scanner.php: 
-		"client_scan_method", 
-		"antivirus_virustotal_client_scan_method_option_valauable",
-		"antivirus_virustotal_client_scan_method_option_malicious", 
-		~/lang/en/antivirus_virustotal.php
+		public function scan($resource){
+			$this->init(); // the initiator contains the absolute minimum to head all functions.
+			
+			if( // scan method is not valid
+				($this->get_config('client_scan_method') != 'antivirus_virustotal_client_scan_method_option_valauable' )) and 
+				($this->get_config('client_scan_method') != 'antivirus_virustotal_client_scan_method_option_malicious'){
+			// then default it.
+			
+			$this->set_config('client_scan_method', 'antivirus_virustotal_client_scan_method_option_valauable');
+			}
+			...
+		}
 	~/libs/client/scan_method_setting.php
 ###
 

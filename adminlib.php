@@ -31,7 +31,13 @@ defined('MOODLE_INTERNAL') || die();
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class antivirus_virustotal_client_scan_method_setting extends admin_setting_configselect {
-
+  public function write_setting($data){
+    
+  }
+  
+  public function validate($data){
+    
+  }
 }
 
 /**
@@ -42,7 +48,13 @@ class antivirus_virustotal_client_scan_method_setting extends admin_setting_conf
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class antivirus_virustotal_client_verbose_setting extends admin_setting_configselect {
-
+  public function write_setting($data){
+    
+  }
+  
+  public function validate($data){
+    
+  }
 }
 
 /**
@@ -53,7 +65,13 @@ class antivirus_virustotal_client_verbose_setting extends admin_setting_configse
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class antivirus_virustotal_client_useragent_setting extends admin_setting_configtext {
-
+  public function write_setting($data){
+    
+  }
+  
+  public function validate($data){
+    
+  }
 }
 
 /**
@@ -64,7 +82,13 @@ class antivirus_virustotal_client_useragent_setting extends admin_setting_config
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class antivirus_virustotal_client_key_setting extends admin_setting_configtext  {
-
+  public function write_setting($data){
+    
+  }
+  
+  public function validate($data){
+    
+  }
 }
 
 /**
@@ -75,5 +99,11 @@ class antivirus_virustotal_client_key_setting extends admin_setting_configtext  
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class antivirus_virustotal_provider_resource_setting  extends admin_setting_configtext {
-
+  public function write_setting($data){
+    
+  }
+  
+  public function validate($data){
+    
+  }
 }

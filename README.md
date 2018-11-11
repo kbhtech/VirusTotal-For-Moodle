@@ -8,7 +8,8 @@ Scan uploads utilizing the VirusTotal service that is provided and utilized by g
 - Support with the development of this package by demand (join community). 
 
 ## GUI for configuring the reasoning of the package. ##
-	"Reasoning", implies logic. The package allows for the administration/security team to set what they are trying
+
+	Scan method - intuitive logic. The package allows for the administration/security team to set what they are trying
 to prove out of a virus scan. This is beneficial in the event of faults, exclussion of signatures, and the inclussion 
 of signatures. Whenever the end user selects "Trying to prove malicous." or "Trying to prove valuable." they set the clients 
 prejudices for data where "Trying to prove" implies the opposite. (Fe: Trying to prove mallice; meaning that by default

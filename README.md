@@ -53,7 +53,7 @@ As of release, that feature (inclussions and exclussions based on methodology) i
 		$string["antivirus_virustotal_client_scan_method_option_malicious"] = "Data is Malicious."
 		$string["antivirus_virustotal_client_scan_method_option_valuable"] = "Data is Valuable."
 		
-	~/libs/client/scan_method_setting.php: input/setting validation class.
+	~/adminlib.php: class antivirus_virustotal_client_scan_method extends admin_setting_configselect { // validation & I/O code...
 	
 ## GUI for configuring the depth of the feedback that the provider returns to the client. 
 

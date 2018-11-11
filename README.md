@@ -7,10 +7,21 @@ You can support the expideted development of this projact as a developer: { Disc
 ## Scan Method Options 
 ### See:
 	~/settings.php, 
+		$antivirus_virustotal_client_scan_method_options = array(
+        		'malicious' => get_string(
+				'antivirus_virustotal_client_scan_method_option_malicious', 
+				'antivirus_virustotal'
+			),
+        		'valuable' => get_string(
+				'antivirus_virustotal_client_scan_method_option_valuable', 
+				'antivirus_virustotal'
+			),
+    		);
+		$settings->add(... $antivirus_virustotal_client_scan_method_options));
 	~/classes/scanner.php: 
 		"client_scan_method", 
 		"antivirus_virustotal_client_scan_method_option_valauable",
-		"antivirus_virustotal_client_scan_method_option_valauable"
+		"antivirus_virustotal_client_scan_method_option_malicious", 
 		~/lang/en/antivirus_virustotal.php
 	~/libs/client/scan_method_setting.php
 ###

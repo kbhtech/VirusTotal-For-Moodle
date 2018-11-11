@@ -30,7 +30,7 @@ defined('MOODLE_INTERNAL') || die();
  * @copyright  2018 Kevin B. Harris.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class antivirus_virustotal_client_scan_method_setting {
+class antivirus_virustotal_client_scan_method_setting extends admin_setting_configselect {
 
 }
 
@@ -41,7 +41,7 @@ class antivirus_virustotal_client_scan_method_setting {
  * @copyright  2018 Kevin B. Harris.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class antivirus_virustotal_client_verbose_setting {
+class antivirus_virustotal_client_verbose_setting extends admin_setting_configselect {
 
 }
 
@@ -52,7 +52,7 @@ class antivirus_virustotal_client_verbose_setting {
  * @copyright  2018 Kevin B. Harris.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class antivirus_virustotal_client_useragent_setting {
+class antivirus_virustotal_client_useragent_setting extends admin_setting_configtext {
 
 }
 
@@ -63,7 +63,7 @@ class antivirus_virustotal_client_useragent_setting {
  * @copyright  2018 Kevin B. Harris.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class antivirus_virustotal_client_key_setting {
+class antivirus_virustotal_client_key_setting extends admin_setting_configtext  {
 
 }
 
@@ -74,6 +74,6 @@ class antivirus_virustotal_client_key_setting {
  * @copyright  2018 Kevin B. Harris.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-class antivirus_virustotal_provider_resource_setting {
+class antivirus_virustotal_provider_resource_setting  extends admin_setting_configtext {
 
 }

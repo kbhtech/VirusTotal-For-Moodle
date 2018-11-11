@@ -45,7 +45,6 @@ Scan uploads utilizing the VirusTotal service that is provided and utilized by g
 		$string["antivirus_virustotal_client_scan_method_option_valuable"] = "Data is Valuable."
 		
 	~/libs/client/scan_method_setting.php: input/setting validation class.
-###
 
 Ref:(
 

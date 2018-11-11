@@ -1,6 +1,4 @@
 <?php
-// This file is part of Moodle - http://moodle.org/
-//
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
@@ -15,7 +13,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'antivirus_virustotal', language 'en'.
+ * Settings for component 'antivirus_virustotal'
  *
  * @package    antivirus_virustotal
  * @copyright  2018 Kevin B. Harris.
@@ -25,57 +23,53 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($ADMIN->fulltree) {
-    require_once(__DIR__ . '/adminlib.php');
-    require_once(__DIR__ . '/classes/scanner.php');
-
-	
-
+	require_once(__DIR__ . '/adminlib.php');
+	require_once(__DIR__ . '/classes/scanner.php');
+	require_once(__DIR__ . '/options.php);
 
 	// The setting for the clients scanning method.
-    $settings->add(new antivirus_virustotal_client_scan_method_setting(
-		'antivirus_virustotal/client_scan_method',
-            get_string('client_scan_method_setting_name', 'antivirus_virustotal'),
-            get_string('client_scan_method_setting_desc', 'antivirus_virustotal'),
-            get_string('client_scan_method_option_valuable', 'antivirus_virustotal'), // default value is valuable.
+	$settings->add(
+		new antivirus_virustotal_client_scan_method_setting('antivirus_virustotal/client_scan_method',
+			get_string('client_scan_method_setting_name', 'antivirus_virustotal'),
+			get_string('client_scan_method_setting_desc', 'antivirus_virustotal'),
+			get_string('client_scan_method_option_valuable', 'antivirus_virustotal'), // default value is valuable.
 			$antivirus_virustotal_client_scan_method_options
 		)
 	);
 	
 	// The setting for the servers verbose reporting.
-	$settings->add(new antivirus_virustotal_client_verbose_setting(
-		'antivirus_virustotal/client_verbose',
-            get_string('client_verbose_setting_name', 'antivirus_virustotal'),
-            get_string('client_verbose_setting_desc', 'antivirus_virustotal'),
-            get_string('client_verbose_option_true', 'antivirus_virustotal'), // default value is true.
+	$settings->add(
+		new antivirus_virustotal_client_verbose_setting('antivirus_virustotal/client_verbose',
+			get_string('client_verbose_setting_name', 'antivirus_virustotal'),
+			get_string('client_verbose_setting_desc', 'antivirus_virustotal'),
+			get_string('client_verbose_option_true', 'antivirus_virustotal'),
 			$antivirus_virustotal_client_verbose_options
 		)
 	);
 	
-    // The setting for the useragent that the client should use in its web connection.
-    $settings->add(
-		new antivirus_virustotal_client_useragent_setting(
-		'antivirus_virustotal/client_useragent_setting',
-            new lang_string('client_useragent_setting_name', 'antivirus_virustotal'), 
+	// The setting for the useragent that the client should use in its web connection.
+	$settings->add(
+		new antivirus_virustotal_client_useragent_setting('antivirus_virustotal/client_useragent_setting',
+			new lang_string('client_useragent_setting_name', 'antivirus_virustotal'), 
 			new lang_string('client_useragent_setting_desc', 'antivirus_virustotal'), 
 			'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.17134' // default
 		)
 	);
 	
 	// The setting for the key that the client should use for the service provider.
-    $settings->add(
-		new antivirus_virustotal_client_key_setting(
-		'antivirus_virustotal/client_key_setting',
-            new lang_string('client_key_setting_name', 'antivirus_virustotal'), 
+	$settings->add(
+		new antivirus_virustotal_client_key_setting('antivirus_virustotal/client_key_setting',
+			new lang_string('client_key_setting_name', 'antivirus_virustotal'), 
 			new lang_string('client_key_setting_desc', 'antivirus_virustotal'), 
 			'' // default none
 		)
 	);
 	
 	// The setting for the encoding the client should send files to the server with.
-    $settings->add(
+	$settings->add(
 		new antivirus_virustotal_local_file_encoding_setting(
-		'antivirus_virustotal/local_file_encoding_setting',
-            new lang_string('local_file_encoding_setting_name', 'antivirus_virustotal'), 
+			'antivirus_virustotal/local_file_encoding_setting',
+			new lang_string('local_file_encoding_setting_name', 'antivirus_virustotal'), 
 			new lang_string('local_file_encoding_setting_desc', 'antivirus_virustotal'), 
 			'' // default none
 		)
